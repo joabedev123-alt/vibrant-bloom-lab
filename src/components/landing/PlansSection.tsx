@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Flame, Truck } from "lucide-react";
+import creatinaMelanciaImg from "../../assets/produto/creatina melancia 01.png";
 
 const plans = [
   {
@@ -7,7 +8,7 @@ const plans = [
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/OEpnO2ZHFO/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: true,
   },
   {
@@ -15,7 +16,7 @@ const plans = [
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/qWZQ-XKhzJ/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: true,
   },
   {
@@ -23,7 +24,7 @@ const plans = [
     price: "R$ 309,60",
     link: "https://pv.b4you.com.br/api/product/c/2a40YJMZuK/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: true,
   },
   {
@@ -31,7 +32,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/Qc7V-U4ceo/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -39,7 +40,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/qPrubJwtNA/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -47,7 +48,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/mqUSldR0Ts/HDDZT8KtcO",
     badges: ["Combo"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -55,7 +56,7 @@ const plans = [
     price: "R$ 268,02",
     link: "https://pv.b4you.com.br/api/product/c/b5BGdoABMf/HDDZT8KtcO",
     badges: ["Combo"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -63,7 +64,7 @@ const plans = [
     price: "R$ 219,30",
     link: "https://pv.b4you.com.br/api/product/c/l3JfLNxVL1/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -71,7 +72,7 @@ const plans = [
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/2TPIqPIyqx/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -79,7 +80,7 @@ const plans = [
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/Fuqyn803tT/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
   {
@@ -87,7 +88,7 @@ const plans = [
     price: "R$ 129,90",
     link: "https://pv.b4you.com.br/api/product/c/9xe5VbtzW5/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: "",
+    image: creatinaMelanciaImg,
     featured: false,
   },
 ];
@@ -122,6 +123,15 @@ const PlansSection = () => {
               viewport={{ once: true }}
               transition={{ delay: (i % 3) * 0.1 }}
             >
+              {/* Image */}
+              <div className="w-full h-64 mb-6 relative rounded-2xl overflow-hidden bg-white/5 flex items-center justify-center p-4">
+                <img 
+                  src={plan.image} 
+                  alt={plan.name} 
+                  className="max-h-full max-w-full object-contain hover:scale-110 transition-transform duration-500 drop-shadow-2xl" 
+                />
+              </div>
+
               {/* Badges */}
               <div className="flex flex-wrap gap-2 mb-4 min-h-[28px]">
                 {plan.badges.map((b) => (
