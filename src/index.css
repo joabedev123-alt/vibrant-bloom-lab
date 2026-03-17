@@ -64,6 +64,11 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image: linear-gradient(to bottom, hsl(var(--background) / 0.85), hsl(var(--background) / 0.85)), url('/big%20booom%20imagem%20de%20fundo.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -89,6 +94,7 @@
   }
 
   .hero-gradient {
+    /* radial gradients decta/primary removed opacity to let bg image pass and shine */
     background: radial-gradient(ellipse at 50% 0%, hsl(348 100% 58% / 0.15) 0%, transparent 60%),
                 radial-gradient(ellipse at 80% 50%, hsl(354 100% 65% / 0.1) 0%, transparent 50%),
                 radial-gradient(ellipse at 20% 80%, hsl(84 100% 67% / 0.08) 0%, transparent 50%);
@@ -131,4 +137,13 @@
 
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Esconder scrollbar nos carrosseis/galerias */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

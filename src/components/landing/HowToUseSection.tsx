@@ -38,26 +38,45 @@ const HowToUseSection = () => {
           <p className="text-lg text-muted-foreground">Simples, prático e delicioso.</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {steps.map((s, i) => (
-            <motion.div
-              key={s.step}
-              className="text-center"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-            >
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 relative">
-                <s.icon className="w-8 h-8 text-primary" />
-                <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center">
-                  {s.step}
-                </span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">{s.title}</h3>
-              <p className="text-muted-foreground">{s.description}</p>
-            </motion.div>
-          ))}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+          <div className="space-y-8">
+            {steps.map((s, i) => (
+              <motion.div
+                key={s.step}
+                className="flex items-start gap-4 text-left"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15 }}
+              >
+                <div className="w-16 h-16 shrink-0 rounded-full bg-primary/10 flex items-center justify-center relative">
+                  <s.icon className="w-6 h-6 text-primary" />
+                  <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center">
+                    {s.step}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">{s.title}</h3>
+                  <p className="text-muted-foreground">{s.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            className="rounded-3xl overflow-hidden glass-card relative aspect-[9/16] w-full max-w-sm mx-auto shadow-2xl"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <video
+              src="/src/assets/IMG_7769.MOV"
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+              muted
+            />
+          </motion.div>
         </div>
       </div>
     </section>

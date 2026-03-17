@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Shield, Award } from "lucide-react";
-import heroProduct from "@/assets/bigboom-hero.png";
+import heroProduct from "@/assets/LikeAPPro_1705401955131.jpeg";
 
 const particles = Array.from({ length: 12 }, (_, i) => ({
   id: i,
@@ -28,7 +28,7 @@ const HeroSection = () => {
         />
       ))}
 
-      <div className="container relative z-10 flex flex-col lg:flex-row items-center gap-12 py-20">
+      <div className="container mt-20 relative z-10 flex flex-col lg:flex-row items-center gap-12 py-20 lg:py-32">
         {/* Text */}
         <motion.div
           className="flex-1 text-center lg:text-left"
@@ -39,19 +39,19 @@ const HeroSection = () => {
           <div className="flex items-center gap-2 justify-center lg:justify-start mb-6">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-primary text-primary" />
               ))}
             </div>
-            <span className="text-sm font-medium text-muted-foreground">+25.000 clientes</span>
+            <span className="text-sm md:text-base font-medium text-muted-foreground">+25.000 clientes satisfeitas</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Creatina 3 em 1 que{" "}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
+            A Creatina que {" "}
             <span className="gradient-text">transforma seu corpo</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-            Creatina + Colágeno + BCAA. Energia, recuperação e definição em um único suplemento.
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
+            Bigboom junta Creatina + Colágeno + BCAA. Tenha mais energia, rápida recuperação e definição superior em um único suplemento.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -81,7 +81,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Product */}
+        {/* Product / Hero Image */}
         <motion.div
           className="flex-1 flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -89,11 +89,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl scale-75" />
+            <div className="absolute inset-0 bg-primary/20 rounded-[3rem] blur-3xl scale-95" />
             <img
               src={heroProduct}
-              alt="BigBoom Creatina 3 em 1"
-              className="relative z-10 w-72 md:w-96 floating drop-shadow-2xl"
+              alt="Mulher segurando BigBoom Creatina 3 em 1"
+              className="relative z-10 w-full max-w-lg rounded-[2.5rem] object-cover aspect-[3/4] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] border border-border/40 floating drop-shadow-2xl"
             />
           </div>
         </motion.div>
