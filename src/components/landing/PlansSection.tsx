@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, Flame, Truck } from "lucide-react";
-import creatinaMelanciaImg from "../../assets/produto/creatina melancia 01.png";
+import produtoImg from "../../assets/produto/IMG_6269-Photoroom.png";
+import PromoBanner from "./PromoBanner";
 
 const plans = [
   {
@@ -9,7 +10,7 @@ const plans = [
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/OEpnO2ZHFO/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: true,
   },
   {
@@ -18,7 +19,7 @@ const plans = [
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/qWZQ-XKhzJ/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: true,
   },
   {
@@ -27,7 +28,7 @@ const plans = [
     price: "R$ 309,60",
     link: "https://pv.b4you.com.br/api/product/c/2a40YJMZuK/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: true,
   },
   {
@@ -36,7 +37,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/Qc7V-U4ceo/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -45,7 +46,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/qPrubJwtNA/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -54,7 +55,7 @@ const plans = [
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/mqUSldR0Ts/HDDZT8KtcO",
     badges: ["Combo"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -63,7 +64,7 @@ const plans = [
     price: "R$ 268,02",
     link: "https://pv.b4you.com.br/api/product/c/b5BGdoABMf/HDDZT8KtcO",
     badges: ["Combo"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -72,7 +73,7 @@ const plans = [
     price: "R$ 219,30",
     link: "https://pv.b4you.com.br/api/product/c/l3JfLNxVL1/HDDZT8KtcO",
     badges: ["2 Potes"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -81,7 +82,7 @@ const plans = [
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/2TPIqPIyqx/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -90,7 +91,7 @@ const plans = [
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/Fuqyn803tT/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
   {
@@ -99,7 +100,7 @@ const plans = [
     price: "R$ 129,90",
     link: "https://pv.b4you.com.br/api/product/c/9xe5VbtzW5/HDDZT8KtcO",
     badges: ["1 Pote"],
-    image: creatinaMelanciaImg,
+    image: produtoImg,
     featured: false,
   },
 ];
@@ -119,6 +120,8 @@ const PlansSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground">Aproveite nossos descontos e escolha a melhor opção para você.</p>
         </motion.div>
+
+        <PromoBanner />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, i) => (
