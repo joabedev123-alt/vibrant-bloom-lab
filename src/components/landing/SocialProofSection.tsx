@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
 import { Star, Users, MessageCircle, TrendingUp } from "lucide-react";
 
+import videoFeedback1 from "../../assets/IMG_6902.MOV";
+import videoFeedback2 from "../../assets/IMG_7763.MOV";
+import posterVideo1 from "../../assets/b28cdc82-80a6-4efc-80af-93d00b29fcc5.jpg";
+
+import proof1 from "../../assets/provas sociais/PROVA SOCIAL 1.jpeg";
+import proof2 from "../../assets/provas sociais/prova social 2.jpeg";
+import proof4 from "../../assets/provas sociais/PROVA SOCIAL 4.jpeg";
+import proof5 from "../../assets/provas sociais/PROVA SOCIAL 5.jpeg";
+import proof6 from "../../assets/provas sociais/PROVA SOCIAL 6.jpeg";
+import proofBB1 from "../../assets/provas sociais/prova big boom 01.jpg";
+import proofBfAf2 from "../../assets/provas sociais/antes x depois 2.png";
+import proofBfAf3 from "../../assets/provas sociais/antes x depois 3.png";
+
 const stats = [
   { icon: Users, value: "37.000+", label: "Clientes satisfeitas" },
   { icon: MessageCircle, value: "9.800+", label: "Avaliações 5 estrelas" },
@@ -9,14 +22,14 @@ const stats = [
 ];
 
 const printImages = [
-  "/src/assets/provas sociais/PROVA SOCIAL 1.jpeg",
-  "/src/assets/provas sociais/prova social 2.jpeg",
-  "/src/assets/provas sociais/PROVA SOCIAL 4.jpeg",
-  "/src/assets/provas sociais/PROVA SOCIAL 5.jpeg",
-  "/src/assets/provas sociais/PROVA SOCIAL 6.jpeg",
-  "/src/assets/provas sociais/prova big boom 01.jpg",
-  "/src/assets/provas sociais/antes x depois 2.png",
-  "/src/assets/provas sociais/antes x depois 3.png",
+  proof1,
+  proof2,
+  proof4,
+  proof5,
+  proof6,
+  proofBB1,
+  proofBfAf2,
+  proofBfAf3,
 ];
 
 const SocialProofSection = () => {
@@ -62,12 +75,12 @@ const SocialProofSection = () => {
             viewport={{ once: true }}
           >
             <video
-              src="/src/assets/IMG_6902.MOV"
+              src={videoFeedback1}
               className="w-full h-full object-cover"
               controls
               playsInline
               muted
-              poster="/src/assets/b28cdc82-80a6-4efc-80af-93d00b29fcc5.jpg"
+              poster={posterVideo1}
             />
             <div className="absolute top-4 left-4 right-4 flex justify-between pointer-events-none">
               <span className="bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Resultado Real</span>
@@ -82,7 +95,7 @@ const SocialProofSection = () => {
             transition={{ delay: 0.2 }}
           >
             <video
-              src="/src/assets/IMG_7763.MOV"
+              src={videoFeedback2}
               className="w-full h-full object-cover"
               controls
               playsInline

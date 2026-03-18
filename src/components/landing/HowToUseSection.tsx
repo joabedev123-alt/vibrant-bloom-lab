@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GlassWater, Dumbbell, Flame } from "lucide-react";
+import howToUseVideo from "../../assets/IMG_7769.MOV";
 
 const steps = [
   {
@@ -70,7 +71,7 @@ const HowToUseSection = () => {
             viewport={{ once: true }}
           >
             <video
-              src="/src/assets/IMG_7769.MOV"
+              src={howToUseVideo}
               className="w-full h-full object-cover"
               controls
               playsInline
