@@ -31,7 +31,7 @@ const itemVariants = {
 
 const TransformationSection = () => {
   return (
-    <section id="beneficios" className="py-24 md:py-32">
+    <section id="beneficios" className="py-16 md:py-32">
       <div className="container">
         <motion.div
           className="text-center mb-16"

@@ -3,7 +3,7 @@ import { ShieldCheck } from "lucide-react";
 
 const GuaranteeSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-muted/50">
+    <section className="py-16 md:py-32 bg-muted/50">
       <div className="container max-w-3xl">
         <motion.div
           className="glass-card p-12 text-center"

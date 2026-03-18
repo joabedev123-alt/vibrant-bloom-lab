@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden hero-gradient">
+    <section className="py-16 md:py-32 relative overflow-hidden hero-gradient">
       <div className="container relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

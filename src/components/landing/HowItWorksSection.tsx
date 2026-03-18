@@ -27,7 +27,7 @@ const ingredients = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-muted/50">
+    <section className="py-16 md:py-32 bg-muted/50">
       <div className="container">
         <motion.div
           className="text-center mb-16"

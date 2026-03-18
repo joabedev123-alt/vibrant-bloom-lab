@@ -58,12 +58,17 @@
 }
 
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom, hsl(var(--background) / 0.85), hsl(var(--background) / 0.85)), url('/big%20booom%20imagem%20de%20fundo.JPG');
     background-size: cover;
     background-position: center;

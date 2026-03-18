@@ -35,7 +35,7 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-16 md:py-32">
       <div className="container max-w-3xl">
         <motion.div
           className="text-center mb-16"

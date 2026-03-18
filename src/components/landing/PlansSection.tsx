@@ -5,6 +5,7 @@ import creatinaMelanciaImg from "../../assets/produto/creatina melancia 01.png";
 const plans = [
   {
     name: "Creatina Big Boom Pink Lemonade - 3 Potes",
+    oldPrice: "R$ 543,20",
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/OEpnO2ZHFO/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
@@ -13,6 +14,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 3 Potes",
+    oldPrice: "R$ 543,20",
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/qWZQ-XKhzJ/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
@@ -21,6 +23,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 3 Potes",
+    oldPrice: "R$ 442,20",
     price: "R$ 309,60",
     link: "https://pv.b4you.com.br/api/product/c/2a40YJMZuK/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
@@ -29,6 +32,7 @@ const plans = [
   },
   {
     name: "Creatina Big Boom Pink Lemonade - 2 Potes",
+    oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/Qc7V-U4ceo/HDDZT8KtcO",
     badges: ["2 Potes"],
@@ -37,6 +41,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 2 Potes",
+    oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/qPrubJwtNA/HDDZT8KtcO",
     badges: ["2 Potes"],
@@ -45,6 +50,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia + Creatina Pink Lemonade",
+    oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/mqUSldR0Ts/HDDZT8KtcO",
     badges: ["Combo"],
@@ -53,6 +59,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia + Bigcalm Maracujá",
+    oldPrice: "R$ 382,80",
     price: "R$ 268,02",
     link: "https://pv.b4you.com.br/api/product/c/b5BGdoABMf/HDDZT8KtcO",
     badges: ["Combo"],
@@ -61,6 +68,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 2 Potes",
+    oldPrice: "R$ 313,30",
     price: "R$ 219,30",
     link: "https://pv.b4you.com.br/api/product/c/l3JfLNxVL1/HDDZT8KtcO",
     badges: ["2 Potes"],
@@ -69,6 +77,7 @@ const plans = [
   },
   {
     name: "Creatina Big Boom Pink Lemonade - 1 Pote",
+    oldPrice: "R$ 217,30",
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/2TPIqPIyqx/HDDZT8KtcO",
     badges: ["1 Pote"],
@@ -77,6 +86,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 1 Pote",
+    oldPrice: "R$ 217,30",
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/Fuqyn803tT/HDDZT8KtcO",
     badges: ["1 Pote"],
@@ -85,6 +95,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 1 Pote",
+    oldPrice: "R$ 185,50",
     price: "R$ 129,90",
     link: "https://pv.b4you.com.br/api/product/c/9xe5VbtzW5/HDDZT8KtcO",
     badges: ["1 Pote"],
@@ -95,7 +106,7 @@ const plans = [
 
 const PlansSection = () => {
   return (
-    <section id="planos" className="py-24 md:py-32">
+    <section id="planos" className="py-16 md:py-32">
       <div className="container">
         <motion.div
           className="text-center mb-16"
@@ -144,6 +155,11 @@ const PlansSection = () => {
               <h3 className="text-xl font-bold mb-2 min-h-[56px] flex items-start">{plan.name}</h3>
               
               <div className="mt-auto">
+                {plan.oldPrice && (
+                  <div className="text-sm font-semibold text-muted-foreground/80 line-through mb-[-4px]">
+                    {plan.oldPrice}
+                  </div>
+                )}
                 <div className="text-3xl font-bold my-2 gradient-text">{plan.price}</div>
                 
                 <a
