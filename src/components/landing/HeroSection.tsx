@@ -28,7 +28,7 @@ const HeroSection = () => {
         />
       ))}
 
-      <div className="container mt-20 relative z-10 flex flex-col lg:flex-row items-center gap-12 py-20 lg:py-32">
+      <div className="container mt-12 sm:mt-20 relative z-10 flex flex-col lg:flex-row items-center gap-12 py-10 sm:py-20 lg:py-32">
         {/* Text */}
         <motion.div
           className="flex-1 text-center lg:text-left"
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <span className="text-sm md:text-base font-medium text-muted-foreground">+25.000 clientes satisfeitas</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6 px-4 sm:px-0">
             A Creatina que {" "}
             <span className="gradient-text">transforma seu corpo</span>
           </h1>

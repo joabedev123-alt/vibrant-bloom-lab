@@ -36,7 +36,10 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 glass-card mx-4 mt-4 px-6 py-4 border border-border/40 bg-background/60 backdrop-blur-md rounded-2xl lg:mx-auto lg:max-w-6xl"
     >
       <div className="flex items-center justify-between">
-        <div className="text-2xl font-bold gradient-text">BigBoom</div>
+        <div className="flex items-center gap-2">
+          <img src="/logo.PNG" alt="BigBoom Logo" className="h-10 w-auto object-contain" />
+          <div className="text-2xl font-bold gradient-text hidden sm:block">BigBoom</div>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

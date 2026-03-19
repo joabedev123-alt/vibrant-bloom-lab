@@ -6,6 +6,7 @@ import PromoBanner from "./PromoBanner";
 const plans = [
   {
     name: "Creatina Big Boom Pink Lemonade - 3 Potes",
+    flavor: "Pink Lemonade",
     oldPrice: "R$ 543,20",
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/OEpnO2ZHFO/HDDZT8KtcO",
@@ -15,6 +16,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 3 Potes",
+    flavor: "Melancia",
     oldPrice: "R$ 543,20",
     price: "R$ 380,25",
     link: "https://pv.b4you.com.br/api/product/c/qWZQ-XKhzJ/HDDZT8KtcO",
@@ -24,6 +26,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 3 Potes",
+    flavor: "Maracujá",
     oldPrice: "R$ 442,20",
     price: "R$ 309,60",
     link: "https://pv.b4you.com.br/api/product/c/2a40YJMZuK/HDDZT8KtcO",
@@ -33,6 +36,7 @@ const plans = [
   },
   {
     name: "Creatina Big Boom Pink Lemonade - 2 Potes",
+    flavor: "Pink Lemonade",
     oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/Qc7V-U4ceo/HDDZT8KtcO",
@@ -42,6 +46,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 2 Potes",
+    flavor: "Melancia",
     oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/qPrubJwtNA/HDDZT8KtcO",
@@ -51,6 +56,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia + Creatina Pink Lemonade",
+    flavor: "Melancia + Pink Lemonade",
     oldPrice: "R$ 386,30",
     price: "R$ 270,40",
     link: "https://pv.b4you.com.br/api/product/c/mqUSldR0Ts/HDDZT8KtcO",
@@ -60,6 +66,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia + Bigcalm Maracujá",
+    flavor: "Melancia + Maracujá",
     oldPrice: "R$ 382,80",
     price: "R$ 268,02",
     link: "https://pv.b4you.com.br/api/product/c/b5BGdoABMf/HDDZT8KtcO",
@@ -69,6 +76,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 2 Potes",
+    flavor: "Maracujá",
     oldPrice: "R$ 313,30",
     price: "R$ 219,30",
     link: "https://pv.b4you.com.br/api/product/c/l3JfLNxVL1/HDDZT8KtcO",
@@ -78,6 +86,7 @@ const plans = [
   },
   {
     name: "Creatina Big Boom Pink Lemonade - 1 Pote",
+    flavor: "Pink Lemonade",
     oldPrice: "R$ 217,30",
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/2TPIqPIyqx/HDDZT8KtcO",
@@ -87,6 +96,7 @@ const plans = [
   },
   {
     name: "Creatina Melancia Big Boom - 1 Pote",
+    flavor: "Melancia",
     oldPrice: "R$ 217,30",
     price: "R$ 152,10",
     link: "https://pv.b4you.com.br/api/product/c/Fuqyn803tT/HDDZT8KtcO",
@@ -96,6 +106,7 @@ const plans = [
   },
   {
     name: "Bigcalm Bigboom - 1 Pote",
+    flavor: "Maracujá",
     oldPrice: "R$ 185,50",
     price: "R$ 129,90",
     link: "https://pv.b4you.com.br/api/product/c/9xe5VbtzW5/HDDZT8KtcO",
@@ -137,8 +148,18 @@ const PlansSection = () => {
               viewport={{ once: true }}
               transition={{ delay: (i % 3) * 0.1 }}
             >
+              {/* Flavor - Elegant and striking */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-full text-center">
+                <span 
+                  className="text-2xl md:text-3xl font-bold px-6 py-1 rounded-full bg-accent text-accent-foreground shadow-xl"
+                  style={{ fontFamily: "'Dancing Script', cursive" }}
+                >
+                  {plan.flavor}
+                </span>
+              </div>
+
               {/* Image */}
-              <div className="w-full h-64 mb-6 relative rounded-2xl overflow-hidden bg-white/5 flex items-center justify-center p-4">
+              <div className="w-full h-64 mb-6 relative rounded-2xl overflow-hidden bg-white/5 flex items-center justify-center p-4 mt-4">
                 <img 
                   src={plan.image} 
                   alt={plan.name} 
