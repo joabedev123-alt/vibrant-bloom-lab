@@ -52,12 +52,12 @@ const PromoBanner = () => {
         <h3 className="text-2xl md:text-5xl font-black text-white leading-tight mb-1">
           CREATINA 3 EM 1
         </h3>
-        <h4 className="text-3xl md:text-6xl font-black text-primary leading-none mb-3 md:mb-4">
-          ATÉ 25% OFF
+        <h4 className="text-4xl md:text-6xl font-black text-primary leading-none mb-3 md:mb-4">
+          ATÉ 65% OFF
         </h4>
 
         <p className="text-gray-400 text-sm md:text-base mb-8">
-          Shape Explosivo • Sabor Melancia • Fórmula 3 em 1 com Creatina, Colágeno e mais.
+          Shape Explosivo • Diversos Sabores • Fórmula 3 em 1 com Creatina, Colágeno e mais.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-6 mb-4">
@@ -75,18 +75,18 @@ const PromoBanner = () => {
             COMPRAR AGORA
           </a>
           
-          <div className="flex items-center gap-4 text-center">
+          <div className="grid grid-cols-3 gap-4 md:flex md:items-center md:gap-4 text-center">
             <div className="flex flex-col">
-              <span className="text-primary font-black text-xl">10%</span>
-              <span className="text-gray-500 text-xs font-bold">1 POTE</span>
+              <span className="text-primary font-black text-lg md:text-xl">65%</span>
+              <span className="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-tighter">1 Pote</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-primary font-black text-xl">20%</span>
-              <span className="text-gray-500 text-xs font-bold">2 POTES</span>
+              <span className="text-primary font-black text-lg md:text-xl">65%</span>
+              <span className="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-tighter">2 Potes</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-primary font-black text-xl">25%</span>
-              <span className="text-gray-500 text-xs font-bold">3 POTES</span>
+              <span className="text-primary font-black text-lg md:text-xl">65%</span>
+              <span className="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-tighter">3 Potes</span>
             </div>
           </div>
         </div>

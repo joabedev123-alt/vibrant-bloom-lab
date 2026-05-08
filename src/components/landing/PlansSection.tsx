@@ -7,8 +7,8 @@ const plans = [
   {
     name: "Creatina Big Boom Pink Lemonade - 3 Potes",
     flavor: "Pink Lemonade",
-    oldPrice: "R$ 543,20",
-    price: "R$ 380,25",
+    oldPrice: "R$ 380,25",
+    price: "R$ 133,08",
     link: "https://pv.b4you.com.br/api/product/c/OEpnO2ZHFO/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
     image: produtoImg,
@@ -17,19 +17,19 @@ const plans = [
   {
     name: "Creatina Melancia Big Boom - 3 Potes",
     flavor: "Melancia",
-    oldPrice: "R$ 543,20",
-    price: "R$ 380,25",
+    oldPrice: "R$ 380,25",
+    price: "R$ 133,08",
     link: "https://pv.b4you.com.br/api/product/c/qWZQ-XKhzJ/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
     image: produtoImg,
     featured: true,
   },
   {
-    name: "Bigcalm Bigboom - 3 Potes",
-    flavor: "Maracujá",
-    oldPrice: "R$ 442,20",
-    price: "R$ 309,60",
-    link: "https://pv.b4you.com.br/api/product/c/2a40YJMZuK/HDDZT8KtcO",
+    name: "Creatina Frutas Amarelas Big Boom - 3 Potes",
+    flavor: "Frutas Amarelas",
+    oldPrice: "R$ 350,10",
+    price: "R$ 122,52",
+    link: "https://pv.b4you.com.br/api/product/c/r7waNbsxx8/HDDZT8KtcO",
     badges: ["3 Potes", "Mais vendido"],
     image: produtoImg,
     featured: true,
@@ -37,8 +37,8 @@ const plans = [
   {
     name: "Creatina Big Boom Pink Lemonade - 2 Potes",
     flavor: "Pink Lemonade",
-    oldPrice: "R$ 386,30",
-    price: "R$ 270,40",
+    oldPrice: "R$ 270,40",
+    price: "R$ 94,63",
     link: "https://pv.b4you.com.br/api/product/c/Qc7V-U4ceo/HDDZT8KtcO",
     badges: ["2 Potes"],
     image: produtoImg,
@@ -47,8 +47,8 @@ const plans = [
   {
     name: "Creatina Melancia Big Boom - 2 Potes",
     flavor: "Melancia",
-    oldPrice: "R$ 386,30",
-    price: "R$ 270,40",
+    oldPrice: "R$ 270,40",
+    price: "R$ 94,63",
     link: "https://pv.b4you.com.br/api/product/c/qPrubJwtNA/HDDZT8KtcO",
     badges: ["2 Potes"],
     image: produtoImg,
@@ -57,38 +57,38 @@ const plans = [
   {
     name: "Creatina Melancia + Creatina Pink Lemonade",
     flavor: "Melancia + Pink Lemonade",
-    oldPrice: "R$ 386,30",
-    price: "R$ 270,40",
+    oldPrice: "R$ 270,40",
+    price: "R$ 94,63",
     link: "https://pv.b4you.com.br/api/product/c/mqUSldR0Ts/HDDZT8KtcO",
     badges: ["Combo"],
     image: produtoImg,
     featured: false,
   },
   {
-    name: "Creatina Melancia + Bigcalm Maracujá",
-    flavor: "Melancia + Maracujá",
-    oldPrice: "R$ 382,80",
-    price: "R$ 268,02",
-    link: "https://pv.b4you.com.br/api/product/c/b5BGdoABMf/HDDZT8KtcO",
-    badges: ["Combo"],
+    name: "Creatina Frutas Amarelas Big Boom - 2 Potes",
+    flavor: "Frutas Amarelas",
+    oldPrice: "R$ 269,10",
+    price: "R$ 94,18",
+    link: "https://pv.b4you.com.br/api/product/c/3_HBzrWUhx/HDDZT8KtcO",
+    badges: ["2 Potes"],
     image: produtoImg,
     featured: false,
   },
   {
-    name: "Bigcalm Bigboom - 2 Potes",
-    flavor: "Maracujá",
-    oldPrice: "R$ 313,30",
-    price: "R$ 219,30",
-    link: "https://pv.b4you.com.br/api/product/c/l3JfLNxVL1/HDDZT8KtcO",
-    badges: ["2 Potes"],
+    name: "3x Termogênico Smart Burnboom",
+    flavor: "Smart Burnboom",
+    oldPrice: "R$ 197,70",
+    price: "R$ 69,18",
+    link: "https://pv.b4you.com.br/api/product/c/5cpNzu15jR/HDDZT8KtcO",
+    badges: ["3 Unidades"],
     image: produtoImg,
     featured: false,
   },
   {
     name: "Creatina Big Boom Pink Lemonade - 1 Pote",
     flavor: "Pink Lemonade",
-    oldPrice: "R$ 217,30",
-    price: "R$ 152,10",
+    oldPrice: "R$ 169,00",
+    price: "R$ 59,14",
     link: "https://pv.b4you.com.br/api/product/c/2TPIqPIyqx/HDDZT8KtcO",
     badges: ["1 Pote"],
     image: produtoImg,
@@ -97,20 +97,40 @@ const plans = [
   {
     name: "Creatina Melancia Big Boom - 1 Pote",
     flavor: "Melancia",
-    oldPrice: "R$ 217,30",
-    price: "R$ 152,10",
+    oldPrice: "R$ 169,00",
+    price: "R$ 59,14",
     link: "https://pv.b4you.com.br/api/product/c/Fuqyn803tT/HDDZT8KtcO",
     badges: ["1 Pote"],
     image: produtoImg,
     featured: false,
   },
   {
-    name: "Bigcalm Bigboom - 1 Pote",
-    flavor: "Maracujá",
-    oldPrice: "R$ 185,50",
-    price: "R$ 129,90",
-    link: "https://pv.b4you.com.br/api/product/c/9xe5VbtzW5/HDDZT8KtcO",
+    name: "Creatina Frutas Amarelas Big Boom - 1 Pote",
+    flavor: "Frutas Amarelas",
+    oldPrice: "R$ 169,00",
+    price: "R$ 59,14",
+    link: "https://pv.b4you.com.br/api/product/c/8fSF13QFSG/HDDZT8KtcO",
     badges: ["1 Pote"],
+    image: produtoImg,
+    featured: false,
+  },
+  {
+    name: "2x Termogênico Smart Burnboom",
+    flavor: "Smart Burnboom",
+    oldPrice: "R$ 139,80",
+    price: "R$ 48,92",
+    link: "https://pv.b4you.com.br/api/product/c/ZTwxBuafh_/HDDZT8KtcO",
+    badges: ["2 Unidades"],
+    image: produtoImg,
+    featured: false,
+  },
+  {
+    name: "Termogênico Smart Burnboom",
+    flavor: "Smart Burnboom",
+    oldPrice: "R$ 79,90",
+    price: "R$ 27,96",
+    link: "https://pv.b4you.com.br/api/product/c/rP9zw8Q_7L/HDDZT8KtcO",
+    badges: ["1 Unidade"],
     image: produtoImg,
     featured: false,
   },
@@ -138,7 +158,7 @@ const PlansSection = () => {
           {plans.map((plan, i) => (
             <motion.div
               key={i}
-              className={`flex flex-col rounded-3xl p-8 relative ${
+              className={`flex flex-col rounded-3xl p-6 md:p-8 relative ${
                 plan.featured
                   ? "plan-highlight bg-card border-2 border-primary scale-[1.02] hover:scale-[1.05]"
                   : "glass-card hover:scale-[1.03]"
@@ -149,9 +169,9 @@ const PlansSection = () => {
               transition={{ delay: (i % 3) * 0.1 }}
             >
               {/* Flavor - Elegant and striking */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-full text-center">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-full text-center px-4">
                 <span 
-                  className="text-2xl md:text-3xl font-bold px-6 py-1 rounded-full bg-accent text-accent-foreground shadow-xl"
+                  className="text-lg sm:text-2xl md:text-3xl font-bold px-4 sm:px-6 py-1 rounded-full bg-accent text-accent-foreground shadow-xl inline-block"
                   style={{ fontFamily: "'Dancing Script', cursive" }}
                 >
                   {plan.flavor}

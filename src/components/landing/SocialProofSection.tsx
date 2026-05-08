@@ -49,7 +49,7 @@ const SocialProofSection = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Veja os resultados reais de quem já experimentou.</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -129,7 +129,7 @@ const SocialProofSection = () => {
             {[...printImages, ...printImages].map((imgSrc, i) => (
               <div
                 key={i}
-                className="w-72 h-[450px] shrink-0 rounded-3xl overflow-hidden glass-card border-2 border-border/50 hover:border-primary/50 transition-colors"
+                className="w-60 h-[380px] md:w-72 md:h-[450px] shrink-0 rounded-3xl overflow-hidden glass-card border-2 border-border/50 hover:border-primary/50 transition-colors"
                 style={{
                   transform: "translateZ(0)",
                 }}
